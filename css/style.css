@@ -5,10 +5,33 @@
     font-family: 'Fredoka', sans-serif;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+} 
+
 h1{
     color: #E53170;
     text-align: center;
     margin-bottom: 50px;
+}
+
+h5{
+    font-size: 25px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+p a{
+    display: inline-block;
+}
+
+img{
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
 }
 
 .container{
@@ -16,16 +39,19 @@ h1{
     width: 90%;
 }
 
-p{
+.introduction{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .col{
-    background-color: black;
+    background-color: #0F0E17;
     display: inline-block;
     float: left;
     margin: 20px;
-
-    width: 300px;
-    height: 20px;
+    min-height: 20px;
+    width: calc(33% - 40px);
+    color: white;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px black;
 }
